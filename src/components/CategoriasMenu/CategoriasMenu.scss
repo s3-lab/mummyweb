@@ -1,0 +1,42 @@
+.hamburguer-icon {
+        align-items: flex-end;
+
+        .icon-h {
+            width: 22px;
+        }
+}
+.menu-content {
+    display: grid;
+    top: 0;
+    left: 0;
+    height: 800px;
+    width: 340px;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    list-style: none;
+    background: white;
+    white-space: nowrap;
+    transition: width 0.3s;
+    grid-template-rows: 10% 1fr;
+    
+    ul {
+        padding-top: 160px;
+        justify-self: center;
+    }
+
+    li {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.8em;
+        font-weight: 500;
+    }
+    .close-icon {
+    grid-area: 1 / 1 ;
+    justify-self: start;
+    padding-left: 30px;
+    }
+    .icon-close {
+        width: 22px;
+    }
+}

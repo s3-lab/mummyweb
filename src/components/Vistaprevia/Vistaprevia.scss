@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;900&display=swap');
+
+.detalles-grid-container {
+    display: grid;
+    width: 100%;
+    height: 670px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    .menu-info-prueba{
+        grid-area: 2 / 2;
+    }
+    .ant-collapse-ghost {
+        padding-top: 60PX;
+        padding-left: 130PX;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .ant-collapse-item{
+        border-top: solid 1PX;
+        width: 530PX;
+    }
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+        left: 520px;
+        right: 0;
+    } 
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.15em;
+        font-size: 14PX;
+    }
+}
+
+
+
