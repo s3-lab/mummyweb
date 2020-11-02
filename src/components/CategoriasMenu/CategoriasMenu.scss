@@ -8,13 +8,13 @@
   }
   &__click {
     width: 340px;
-    height: 800px;
+    height: 100vh;
     background-color: #ffffff;
     position: absolute;
     top: 0;
     left: -500px;
     z-index: 10000;
-    box-shadow: 2px -1px 5px -1px rgba(0, 0, 0, 0.6);
+    // box-shadow: 2px -1px 5px -1px rgba(0, 0, 0, 0.6);
     &-svg {
       text-align: end;
       padding: 40px 30px 0;
@@ -40,6 +40,9 @@
           }
           a {
             color: #000;
+            &:hover {
+              color: #888b8d;
+            }
           }
         }
       }

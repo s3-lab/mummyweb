@@ -7,39 +7,48 @@
   }
   &-text {
     position: absolute;
-    width: 25%;
-    padding-top: 300px;
-    padding-left: 90px;
+    width: 30%;
     z-index: 100;
     height: fit-content;
-    h2 {
-      font-size: 60px;
-      color: #fff;
-      height: auto;
-    }
-    p {
-      font-size: 20px;
-      color: #fff;
-      font-weight: lighter;
-      height: auto;
-    }
-    button {
-      height: auto;
-      background-color: transparent;
-      border: 0.5px solid #fff;
-      color: #fff;
-      font-size: 20px;
-      font-weight: lighter;
-      padding: 10px 20px;
-      outline: 0;
-      cursor: pointer;
-      &:active {
+    padding-left: 5%;
+    :only-child {
+      padding: 50% 20% 50% 0;
+      margin: auto;
+      h2 {
+        font-size: 60px;
+        color: #202133;
+        height: auto;
+      }
+      p {
+        font-size: 20px;
+        color: #202133;
+
+        font-weight: 300;
+        height: auto;
+      }
+      button {
+        height: auto;
+        background-color: transparent;
+        border: 0.5px solid #202133;
+        color: #202133;
+
+        font-size: 20px;
+        font-weight: 300;
+        padding: 10px 20px;
         outline: 0;
+        cursor: pointer;
+        &:active {
+          outline: 0;
+        }
       }
     }
   }
 
   ul {
     height: 12px;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
   }
 }

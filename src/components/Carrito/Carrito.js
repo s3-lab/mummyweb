@@ -6,8 +6,8 @@ import "./Carrito.scss";
 export default function carrito() {
   return (
     <>
-      <div variant="link" className="Carrito">
-        <Carrito className="icon-car" />
+      <div variant="link" className="car">
+        <Carrito className="car__icon" />
       </div>
     </>
   );

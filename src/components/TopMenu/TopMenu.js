@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import CategoriasMenu from "../CategoriasMenu";
 import Carrito from "../Carrito";
 import { ReactComponent as Logo } from "./../../assets/svg/mummy.svg";
@@ -13,7 +13,9 @@ export default function TopMenu() {
         <CategoriasMenu />
       </div>
       <div className="header__logo">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
       </div>
       <div>
         <Carrito />

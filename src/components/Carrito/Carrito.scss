@@ -1,7 +1,6 @@
-.Carrito{
-    align-items: flex-end;
-    
-    .icon-car{
-        width: 27px;
-    }
+.car {
+  &__icon {
+    width: 27px;
+    cursor: pointer;
+  }
 }

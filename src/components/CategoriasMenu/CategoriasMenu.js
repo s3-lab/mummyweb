@@ -8,19 +8,18 @@ import "./CategoriasMenu.scss";
 export default function CategoriasMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <div className="menu">
-      <div className="menu__svg" onClick={handleMenu}>
+      <div className="menu__svg" onMouseOver={() => setMenuOpen(true)}>
         <HamburguerIcon />
       </div>
 
-      <nav className={menuOpen ? `menu__click open` : "menu__click close"}>
+      <nav
+        className={menuOpen ? `menu__click open` : "menu__click close"}
+        onMouseLeave={() => setMenuOpen(false)}
+      >
         <div className="menu__click-svg">
-          <CloseIcon onClick={handleMenu} />
+          <CloseIcon onClick={() => setMenuOpen(false)} />
         </div>
         <div className="menu__click-list">
           <ul>

@@ -11,9 +11,7 @@ import Detalles from "./pages/detalles";
 function App() {
   return (
     <Router>
-      <div className="App">
-        <TopMenu />
-      </div>
+      <TopMenu />
 
       <Switch>
         <Route path="/" exact={true}>

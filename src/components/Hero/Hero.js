@@ -7,11 +7,13 @@ export default function Hero() {
   return (
     <div className="carousel">
       <div className="carousel-text">
-        <h2>Buenos Aires Village</h2>
-        <p>
-          La ciudad tambien es tu hogar es el sinonimo de vivir en comunidad
-        </p>
-        <button>Descubre mas</button>
+        <div>
+          <h2>Buenos Aires Village</h2>
+          <p>
+            La ciudad tambien es tu hogar es el sinonimo de vivir en comunidad
+          </p>
+          <button>Descubre mas</button>
+        </div>
       </div>
       <Carousel autoplay>
         <div>
