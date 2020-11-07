@@ -11,8 +11,9 @@
     z-index: 100;
     height: fit-content;
     padding-left: 5%;
+
     :only-child {
-      padding: 50% 20% 50% 0;
+      padding: 35% 20% 50% 0;
       margin: auto;
       h2 {
         font-size: 60px;
@@ -20,10 +21,11 @@
         height: auto;
       }
       p {
+        font-family: 'Karla', sans-serif;
         font-size: 20px;
         color: #202133;
 
-        font-weight: 300;
+        font-weight: 400;
         height: auto;
       }
       button {

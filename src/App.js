@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import TopMenu from "./components/TopMenu";
+import Footer from "./components/Footer";
 
 // pages
 
@@ -12,7 +13,6 @@ function App() {
   return (
     <Router>
       <TopMenu />
-
       <Switch>
         <Route path="/" exact={true}>
           <Home />
@@ -24,6 +24,7 @@ function App() {
           <Error404 />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
