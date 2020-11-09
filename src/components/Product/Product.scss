@@ -1,0 +1,26 @@
+.Newproducts{
+    .tittle-newproducts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        h2{
+            letter-spacing: 4px;
+            font-weight: 700;
+        }
+    }
+
+    .site-card-wrapper {
+        display: flex;
+        justify-content: center;
+        .ant-card-bordered {
+            border: none;
+        .ant-card-meta-title{
+            text-align: center;
+        }
+        .ant-card-meta-description{
+            text-align: center;
+        }
+      }
+    }
+}

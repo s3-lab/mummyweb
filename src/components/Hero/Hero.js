@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "antd";
-import HeroIMG from "../../assets/Hero.png";
+import Product from "../Product";
+import HeroIMG from "../../assets/mummyhero.jpg";
 import "./Hero.scss";
 
 export default function Hero() {
