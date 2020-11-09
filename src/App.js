@@ -5,6 +5,7 @@ import TopMenu from "./components/TopMenu";
 // pages
 
 import Home from "./pages/home";
+import About from "./pages/about";
 import Error404 from "./pages/error404";
 import Detalles from "./pages/detalles";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/detalles" exact={true}>
           <Detalles />
         </Route>
+        <Route path="/about" exact component={About} />
         <Route path="*" exact={true}>
           <Error404 />
         </Route>

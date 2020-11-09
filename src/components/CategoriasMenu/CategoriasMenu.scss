@@ -1,3 +1,5 @@
+@import "../../styles/index";
+
 .menu {
   &__svg {
     cursor: pointer;
@@ -14,7 +16,6 @@
     top: 0;
     left: -500px;
     z-index: 10000;
-    // box-shadow: 2px -1px 5px -1px rgba(0, 0, 0, 0.6);
     &-svg {
       text-align: end;
       padding: 40px 30px 0;
@@ -39,9 +40,9 @@
             margin-top: 100px;
           }
           a {
-            color: #000;
+            color: $main-color;
             &:hover {
-              color: #888b8d;
+              color: $secondary-color;
             }
           }
         }

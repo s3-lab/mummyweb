@@ -33,7 +33,7 @@ export default function CategoriasMenu() {
               <Link to="/lapiceras">LAPICERAS</Link>
             </li>
             <li>
-              <Link to="/abour">ABOUT</Link>
+              <Link to="/about">ABOUT</Link>
             </li>
           </ul>
         </div>
