@@ -21,7 +21,7 @@ export default function Footer() {
           </ul>
       </div>
       <div className="contact">
-      <h3>Mummy s.a.s</h3>
+      <h3>Contact</h3>
         <ul>
           <li>
             <p>
@@ -32,7 +32,7 @@ export default function Footer() {
       </div>
             <div className="newsletter">
               <form action="./suscripcion/" method="post" target="_blank">
-                  <h2 className="tittlefooter">
+                  <h2>
                   Únete a nuestro newsletter
                   </h2>
                   <input type="email" name="name" />

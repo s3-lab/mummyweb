@@ -6,18 +6,20 @@
     height: 208px;
     display: flex;
     font-family: 'Roboto', sans-serif;
-    align-items: center;
     justify-content: space-between;
+    padding-top: 40px;
+    
     button {
         height: auto;
         background-color: transparent;
         border: 0.5px solid white;
         color:white;
 
-        font-size: 16px;
+        font-size: 10px;
         font-weight: 300;
-        padding: 10px 20px;
+        padding: 5px 20px;
         outline: 0;
+        letter-spacing: 1px;
         cursor: pointer;
      }
 
@@ -25,6 +27,9 @@
         padding-left: 5%;
         text-align: center;
         font-weight: 100;
+        h3 {
+            color: white;
+        }
         ul {
             padding: 0%;
             li {
@@ -37,9 +42,11 @@
         }
     }
     .contact {
-        padding-left: 5%;
         text-align: center;
         font-weight: 100;
+        h3 {
+            color: white;
+        }
         ul {
             padding: 0%;
             li {
@@ -53,5 +60,13 @@
         }
         .newsletter {
             padding-right: 5%;
+            h2 {
+                color: white;
+                text-align: center;
+            }
+            input {
+                width: 240px;
+                height: 28px;
+            }
         }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import TopMenu from "./components/TopMenu";
 import Footer from "./components/Footer";
+import RedesSociales from "./components/RedesSociales";
 
 // pages
 
@@ -24,6 +25,7 @@ function App() {
           <Error404 />
         </Route>
       </Switch>
+      <RedesSociales/>
       <Footer />
     </Router>
   );
