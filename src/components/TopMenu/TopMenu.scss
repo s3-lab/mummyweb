@@ -27,15 +27,12 @@
   &__car{
     display: flex;
     align-items: center;
-    .car{
       position: relative;
-
-    }
     span{
     text-align: center;
     background: black;
-    top: 20px;
-    right: 45px;
+    top: -10px;
+    right: -15px;
     width: 20px;
     color: white;
     border-radius: 20px;
