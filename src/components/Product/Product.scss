@@ -1,26 +1,31 @@
-.Newproducts{
-    .tittle-newproducts{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 200px;
-        h2{
-            letter-spacing: 4px;
-            font-weight: 700;
+.card{
+    width: 250px;
+    margin-top: 50px;
+    &:hover{
+        
+            span:first-of-type{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                text-align: center;
+                background-color: #000;
+                color: #fff;
+                width: 100%;
+                cursor: pointer;
+            }
+        
+    }
+    &__img{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        span{
+            display: none;
         }
     }
-
-    .site-card-wrapper {
-        display: flex;
-        justify-content: center;
-        .ant-card-bordered {
-            border: none;
-        .ant-card-meta-title{
-            text-align: center;
-        }
-        .ant-card-meta-description{
-            text-align: center;
-        }
-      }
+    &__info{
+        text-align: center;
     }
+   
 }

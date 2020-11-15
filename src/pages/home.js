@@ -1,13 +1,17 @@
-import React from "react";
 import Product from "../components/Product";
-
 import Hero from "../components/Hero";
+import './home.scss'
 
-export default function home() {
+export default function Home({ counter, handleAdd, data}) {
+
   return (
     <>
       <Hero />
-      <Product />
+      <div className="newProducts">
+        <Product handleAdd={handleAdd} data={data}/>
+      </div>
+      <p>{counter}</p>
+
     </>
   );
 }
