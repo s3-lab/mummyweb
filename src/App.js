@@ -9,6 +9,7 @@ import RedesSociales from "./components/RedesSociales";
 import Home from "./pages/home";
 import Error404 from "./pages/error404";
 import Detalles from "./pages/detalles";
+import Storys from "./pages/storys";
 import useFetch from './hooks/useFetch'
 
 function App() {
@@ -43,6 +44,9 @@ function App() {
         </Route>
         <Route path="/detalles" exact={true}>
           <Detalles />
+        </Route>
+        <Route path="/storys" exact={true}>
+          <Storys />
         </Route>
         <Route path="*" exact={true}>
           <Error404 />

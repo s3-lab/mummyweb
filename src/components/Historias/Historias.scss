@@ -1,0 +1,40 @@
+.HistoriasChimbas {
+    display: flex;
+    align-items: center;
+    &__imagen {
+        width: 800px;
+        img {
+            width: 800px;
+        }
+    }
+    &__contenido{
+        width: 500px;
+        h1{
+            width: 200px;
+            font-size: 48px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+.Campaña {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    
+    &__imagen {
+        width: 400px;
+        img {
+            width: 400px;
+        }
+    }
+    &__contenido {
+        width: 800px;
+        padding-right: 10%;
+        h2 {
+            font-size: 35px;
+            letter-spacing: 1px;
+        }
+    }
+}

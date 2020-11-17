@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Carousel } from "antd";
 import Product from "../Product";
 import HeroIMG from "../../assets/mummyhero.jpg";
@@ -13,7 +14,11 @@ export default function Hero() {
           <p>
             La ciudad tambien es tu hogar es el sinonimo de vivir en comunidad
           </p>
-          <button>Descubre mas</button>
+          <Link to="/storys">
+              <button>
+              Descubre más
+              </button>
+          </Link>
         </div>
       </div>
       <Carousel autoplay>

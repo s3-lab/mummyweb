@@ -4,4 +4,8 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    &__tittle{
+        display: flex;
+        letter-spacing: 2px;
+    }
 }
