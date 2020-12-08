@@ -1,0 +1,66 @@
+.checkout{
+    display: flex;
+
+    &-container{
+        width: 40%;
+        padding:2% 4%;
+        height: 50%;
+        &__item{
+           
+          .product-added{
+              height: 100%;
+              img{
+                height: 100%;
+                object-fit: cover;
+              }
+          }
+        }
+    }
+   
+    &-form{
+        width: 60%;
+        padding:2% 4%;
+        .form{
+            display: flex;
+            label{
+                display: block;
+                margin-top: 25px;
+            }
+            input{
+                border: none;
+                border-bottom: 1px solid #000;
+                width: 100%;
+                outline: none;
+                background-color: #fff;
+                margin-top: 25px;
+               
+              
+            }
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover, 
+            input:-webkit-autofill:focus, 
+            input:-webkit-autofill:active  {
+                -webkit-box-shadow: 0 0 0 30px white inset ;
+            }
+            &__field{
+                height: 100px;
+            }
+            &__left{
+                width: 50%;
+                padding: 0 4%;
+
+            }
+           
+            &__rigth{
+                width: 50%;
+                padding: 0 4%;
+
+            }
+        }
+    }
+}
+.car-container{
+    &__close{
+        // display: block;
+    }
+}

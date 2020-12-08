@@ -1,6 +1,5 @@
 import React from "react";
 import { Carousel } from "antd";
-import Product from "../Product";
 import HeroIMG from "../../assets/mummyhero.jpg";
 import "./Hero.scss";
 

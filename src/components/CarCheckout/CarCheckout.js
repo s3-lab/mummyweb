@@ -1,10 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {Link} from 'react-router-dom'
 import ProductAdd from '../ProductAdd'
-import './CarModal.scss'
-import './ProductInCar.scss'
-
-export default function CarModal({carDisplay, productsCar, counter, data, getProductsFromLocalStorage}){
+import './CarCheckout.scss'
+export default function CarModal({ productsCar, counter, data, getProductsFromLocalStorage}){
 
     const [noRepeatProduct,setNoRepeatProduct] = useState([]);
     const [cartTotalPrice, setCartTotalPrice] = useState(0);
@@ -53,30 +50,25 @@ export default function CarModal({carDisplay, productsCar, counter, data, getPro
 
     },[productsCar,data, noRepeatProduct])
 
-const display = carDisplay ? 'open' : 'close';
     return(
-        <div className={`car-container car-container__${display}`} >
-            <div className='car-container__header'>
+        <>
+        <div className={`car-container_checkout`} >
+            <div className='car-container_checkout__header'>
                  <p>{ productsCar.length == 0 ? "CESTA VACIA" : "RESUMEN DEL PEDIDO"}</p>
             </div>
-            <div className='car-container__list'>
+            <div className='car-container_checkout__list'>
                 {
                         noRepeatProduct.map((id)=>{
                                 return <ProductAdd id={id} productsCar={productsCar} data={data} getProductsFromLocalStorage={getProductsFromLocalStorage} countDuplicatesItemArray={countDuplicatesItemArray}/>
                         })
                 }
-
             </div>
-            <div className='car-container__total'>
+        </div>
+        <div className='car-container_checkout__total'>
                 
                 <p>TOTAL</p>
                 <p>ars {cartTotalPrice}</p>
             </div>
-            <div className='car-container__button'>
-                <button>
-                    <Link to='/checkout'>VER CESTA</Link>
-                </button>
-            </div>
-        </div>
+        </>
     )
 }
