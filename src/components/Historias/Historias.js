@@ -7,7 +7,7 @@ import "./Historias.scss";
 export default function historias() {
 
     return (
-                <>
+     <>
                 <div className="HistoriasChimbas">
                     <div className="HistoriasChimbas__imagen">
                         <img src={HistoriaIMG} />
@@ -32,6 +32,6 @@ export default function historias() {
                 <img src={CampañaIMG} />
                 </div>
             </div>
-            </>
+      </>
     )
 }
