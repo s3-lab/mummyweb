@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import ProductAdd from '../ProductAdd'
 import './CarModal.scss'
 import './ProductInCar.scss'
 
-export default function CarModal({carDisplay, productsCar, counter, data, getProductsFromLocalStorage}){
+function CarModal(props) {
 
+    const {carDisplay, productsCar, counter, data, getProductsFromLocalStorage, location} = props;
     const [noRepeatProduct,setNoRepeatProduct] = useState([]);
     const [cartTotalPrice, setCartTotalPrice] = useState(0);
 
@@ -24,9 +25,6 @@ export default function CarModal({carDisplay, productsCar, counter, data, getPro
        setNoRepeatProduct(singles)
     },[productsCar, counter])
    
- 
-
-
     useEffect(()=>{
         const productData = [];
         let totalPrice = 0;
@@ -53,30 +51,36 @@ export default function CarModal({carDisplay, productsCar, counter, data, getPro
 
     },[productsCar,data, noRepeatProduct])
 
-const display = carDisplay ? 'open' : 'close';
+    const emptyBag = productsCar.length == 0 ? 'empty' : ''
+
     return(
-        <div className={`car-container car-container__${display}`} >
+        <div className={`car-container car-container__${carDisplay ? 'open' : 'close'} ${emptyBag}`} >
             <div className='car-container__header'>
                  <p>{ productsCar.length == 0 ? "CESTA VACIA" : "RESUMEN DEL PEDIDO"}</p>
             </div>
             <div className='car-container__list'>
                 {
-                        noRepeatProduct.map((id)=>{
-                                return <ProductAdd id={id} productsCar={productsCar} data={data} getProductsFromLocalStorage={getProductsFromLocalStorage} countDuplicatesItemArray={countDuplicatesItemArray}/>
-                        })
+                    noRepeatProduct.map((id)=>{
+                        return <ProductAdd id={id} productsCar={productsCar} data={data} getProductsFromLocalStorage={getProductsFromLocalStorage} countDuplicatesItemArray={countDuplicatesItemArray}/>
+                    })
                 }
-
             </div>
-            <div className='car-container__total'>
-                
-                <p>TOTAL</p>
-                <p>ars {cartTotalPrice}</p>
-            </div>
-            <div className='car-container__button'>
-                <button>
-                    <Link to='/checkout'>VER CESTA</Link>
-                </button>
-            </div>
+            {productsCar.length != 0 &&
+                <>
+                    <div className='car-container__total'>
+                        <p>TOTAL</p>
+                        <p>ars {cartTotalPrice}</p>
+                    </div>
+                    <div className='car-container__button'>
+                            <Link to='/checkout'>
+                                <button>
+                                    VER CESTA
+                                </button>
+                            </Link>
+                    </div>
+                </>}
         </div>
     )
 }
+
+export default withRouter(CarModal)

@@ -16,17 +16,17 @@ const text = `
 export default function Vistaprevia() {
     return (
       <div className = "detalles-grid-container">
-      <Collapse defaultActiveKey={['1']} ghost>
-      <Panel header="INFO" key="1">
-        <p>{text}</p>
-      </Panel>
-      <Panel header="MEDIDAS" key="2">
-        <p>{text}</p>
-      </Panel>
-      <Panel header="DETALLES" key="3">
-        <p>{text}</p>
-      </Panel>
-    </Collapse>
+        <Collapse defaultActiveKey={['1']} ghost>
+          <Panel header="INFO" key="1">
+            <p>{text}</p>
+          </Panel>
+          <Panel header="MEDIDAS" key="2">
+            <p>{text}</p>
+          </Panel>
+          <Panel header="DETALLES" key="3">
+            <p>{text}</p>
+          </Panel>
+      </Collapse>
     </div>
     )
 }

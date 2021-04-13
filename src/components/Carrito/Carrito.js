@@ -1,14 +1,11 @@
 import React from "react";
-import { ReactComponent as Carrito } from "./../../assets/svg/Carrito.svg";
 
 import "./Carrito.scss";
 
-export default function carrito() {
+export default function carrito({Icon}) {
   return (
-    <>
       <div variant="link" className="car">
-        <Carrito className="car__icon" />
+        <Icon className="car__icon" />
       </div>
-    </>
   );
 }

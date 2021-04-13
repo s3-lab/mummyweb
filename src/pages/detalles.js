@@ -6,7 +6,7 @@ export default function detalles() {
 
     return (
         <>
-          <Vistaprevia/>
+          {/* <Vistaprevia/> */}
         </>
     )
 }

@@ -1,10 +1,19 @@
+@import "../../styles/screen";
+@import '../../styles/color';
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap");
+
 .carousel {
   height: calc(100vh - 100px);
+
   * {
     height: 100%;
   }
+
+  &__img-mobile {
+    display: none;
+  }
+
   &-text {
     position: absolute;
     width: 30%;
@@ -12,33 +21,35 @@
     height: fit-content;
     padding-left: 5%;
 
-    :only-child {
+    &__title{
       padding: 35% 20% 50% 0;
       margin: auto;
+
       h2 {
         font-size: 60px;
-        color: #ffff;
+        color: $white;
         height: auto;
       }
+
       p {
         font-family: 'Karla', sans-serif;
         font-size: 20px;
-        color: #ffff;
-
+        color: $white;
         font-weight: 400;
         height: auto;
       }
+
       button {
         height: auto;
         background-color: transparent;
-        border: 0.5px solid #ffff;
-        color: #ffff;
-
+        border: 0.5px solid $white;
+        color: $white;
         font-size: 20px;
         font-weight: 300;
         padding: 10px 20px;
         outline: 0;
         cursor: pointer;
+
         &:active {
           outline: 0;
         }
@@ -54,3 +65,35 @@
     object-fit: cover;
   }
 }
+
+// @include xs {
+
+//   .carousel {
+//     height: 100vh;
+
+//     * {
+//       height: auto;
+//     }
+
+//     &__img-mobile {
+//       display: block;
+//       height: 50%;
+//     }
+
+//     &-text {
+//       &__title {
+//         padding: 0;
+
+//         h2, p {
+//           color: $black;
+//           font-size: 20px;
+//         }
+//       }
+//     }
+  
+//     .ant-carousel {
+//       display: none;
+//     }
+//   }
+
+// }

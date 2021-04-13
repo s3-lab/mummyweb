@@ -1,26 +1,32 @@
-.car-container_checkout{
-   &__list{
+@import '../../styles/color';
+
+.car-container_checkout {
+   &__list {
     max-height: 500px;
     overflow-y: auto;
    }
-   &__header{
+
+   &__header {
        text-align: center;
        font-weight: 600;
        font-size: 18px;
    }
-   &__total{
+
+   &__total {
        display: flex;
        justify-content: space-around;
        text-align: center;
        font-weight: 600;
        margin-top: 30px;
-       border-top: 1px solid #6B6B6B;
+       border-top: 1px solid $gray-dark;
         padding: 10px 0;
    }
-   button{
+
+   button {
        display: none;
    }
-   span[data-name="quantity"]::before{
+
+   span[data-name="quantity"]::before {
        content: 'x';
    }
 }

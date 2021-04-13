@@ -65,7 +65,6 @@ export default function CarModal({ productsCar, counter, data, getProductsFromLo
             </div>
         </div>
         <div className='car-container_checkout__total'>
-                
                 <p>TOTAL</p>
                 <p>ars {cartTotalPrice}</p>
             </div>

@@ -1,3 +1,4 @@
+@import '../../styles/color';
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300&display=swap");
 
 .header {
@@ -5,7 +6,6 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-
   width: 100%;
   padding: 0 5%;
   position: sticky;
@@ -14,30 +14,35 @@
   margin: auto;
   height: 100px;
   background: none;
+
   &:hover {
-    background: #fff;
+    background: $white;
     transition: 0.5s;
   }
+
   &__logo {
     svg {
       width: 100px;
       height: 50px;
     }
   }
+
   &__car{
     display: flex;
     align-items: center;
-      position: relative;
-    span{
+    position: relative;
+
+    span {
     text-align: center;
-    background: black;
+    background: $black;
     top: -10px;
     right: -15px;
     width: 20px;
-    color: white;
+    color: $white;
     border-radius: 20px;
     position: absolute;
     }
+
     &:hover {
       .car-container{
         display: block;

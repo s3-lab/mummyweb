@@ -1,10 +1,11 @@
 .checkout{
     display: flex;
-
+    justify-content: center;
+    
     &-container{
         width: 40%;
         padding:2% 4%;
-        height: 50%;
+
         &__item{
            
           .product-added{
@@ -18,7 +19,7 @@
     }
    
     &-form{
-        width: 60%;
+        width: 50%;
         padding:2% 4%;
         .form{
             display: flex;
@@ -44,6 +45,15 @@
             }
             &__field{
                 height: 100px;
+
+                &.has-error {
+                    input{
+                        border-bottom: 1px solid  #ca1921;
+                    }
+                    p{
+                        color: #ca1921;
+                    }
+                }
             }
             &__left{
                 width: 50%;
@@ -55,6 +65,22 @@
                 width: 50%;
                 padding: 0 4%;
 
+            }
+        }
+        button{
+            margin-top: 20px;
+            padding: 10px 0;
+            width: 100%;
+            border: 0;
+            background-color: #000;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            outline: none;
+
+            &:active {
+                transform: scale(.99);
             }
         }
     }
